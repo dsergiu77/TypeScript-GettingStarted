@@ -1,7 +1,9 @@
 /// <reference path="person.ts" />
 
 class Player implements Person {
-    name: string;
+    constructor(public name: string) {
+    }
+
     age: number;
     highscore: number;
     static gender: boolean = true;
